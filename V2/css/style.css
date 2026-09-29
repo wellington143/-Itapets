@@ -7,6 +7,9 @@ body {
   font-family: Arial, sans-serif;
   background-color: #a7adab;
   color: #0b0545;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
 }
 
 img {
@@ -17,6 +20,7 @@ img {
 main {
   max-width: 1200px;
   margin: auto;
+  width: 100%;
   padding: 20px;
 }
 
@@ -124,6 +128,40 @@ form {
   padding: 20px;
   max-width: 800px;
   margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 15px 10px;
+  align-items: center;
+}
+
+form > * {
+  min-width: 0;
+}
+
+.full-width {
+  grid-column: span 12;
+  margin: 0;
+}
+
+label.full-width {
+  grid-column: span 3;
+}
+
+input.full-width,
+textarea.full-width {
+  grid-column: span 9;
+}
+
+label[for="comentario"] {
+  align-self: start;
+  padding-top: 13px;
+}
+
+p.titulo-grupo {
+  grid-column: span 3;
+  font-weight: bold;
+  margin: 0;
 }
 
 input[type="text"],
@@ -133,20 +171,29 @@ textarea {
   width: 100%;
   max-width: 100%;
   padding: 12px;
-  margin-top: 5px;
-  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-family: inherit;
+  margin: 0;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-  margin-bottom: 15px;
+textarea {
+  resize: vertical;
 }
 
-input[type="submit"],
-input[type="reset"] {
+.inline-input {
+  grid-column: span 1;
+  justify-self: end;
+  margin: 0;
+}
+
+.inline-label {
+  grid-column: span 2;
+  justify-self: start;
+  margin: 0;
+}
+
+.btn-grid {
   padding: 12px 25px;
   background-color: #02135b;
   color: white;
@@ -154,11 +201,18 @@ input[type="reset"] {
   border-radius: 4px;
   cursor: pointer;
   font-size: 1em;
-  margin-right: 10px;
+  width: 100%;
 }
 
-input[type="submit"]:hover,
-input[type="reset"]:hover {
+.btn-enviar {
+  grid-column: span 6;
+}
+
+.btn-limpar {
+  grid-column: span 6;
+}
+
+.btn-grid:hover {
   background-color: #5d66b0;
 }
 
@@ -194,10 +248,24 @@ input[type="reset"]:hover {
     width: 100%;
   }
 
-  input[type="submit"],
-  input[type="reset"] {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 10px;
+  label.full-width,
+  input.full-width,
+  textarea.full-width,
+  p.titulo-grupo,
+  .btn-enviar,
+  .btn-limpar {
+    grid-column: span 12;
+  }
+
+  label[for="comentario"] {
+    padding-top: 0;
+  }
+
+  .inline-input {
+    grid-column: span 2;
+  }
+
+  .inline-label {
+    grid-column: span 10;
   }
 }

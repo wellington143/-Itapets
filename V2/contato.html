@@ -29,48 +29,48 @@
         method="post"
         enctype="text/plain"
       >
-        <label for="nome">Nome:</label><br />
-        <input type="text" id="nome" name="nome" required /><br /><br />
+        <label for="nome" class="full-width">Nome:</label>
+        <input type="text" id="nome" name="nome" required class="full-width" />
 
-        <label for="email">E-mail:</label><br />
-        <input type="email" id="email" name="email" required /><br /><br />
+        <label for="email" class="full-width">E-mail:</label>
+        <input type="email" id="email" name="email" required class="full-width" />
 
-        <label for="telefone">Telefone:</label><br />
-        <input type="tel" id="telefone" name="telefone" /><br /><br />
+        <label for="telefone" class="full-width">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" class="full-width" />
 
-        <p>Qual é o seu tipo de pet?</p>
+        <p class="full-width titulo-grupo">Qual é o seu tipo de pet?</p>
 
-        <input type="radio" id="cachorro" name="pet" value="cachorro" />
-        <label for="cachorro">Cachorro</label><br />
+        <input type="radio" id="cachorro" name="pet" value="cachorro" class="inline-input" />
+        <label for="cachorro" class="inline-label">Cachorro</label>
 
-        <input type="radio" id="gato" name="pet" value="gato" />
-        <label for="gato">Gato</label><br />
+        <input type="radio" id="gato" name="pet" value="gato" class="inline-input" />
+        <label for="gato" class="inline-label">Gato</label>
 
-        <input type="radio" id="outro" name="pet" value="outro" />
-        <label for="outro">Outro</label><br /><br />
+        <input type="radio" id="outro" name="pet" value="outro" class="inline-input" />
+        <label for="outro" class="inline-label">Outro</label>
 
-        <p>Qual assunto deseja tratar?</p>
+        <p class="full-width titulo-grupo">Qual assunto deseja tratar?</p>
 
-        <input type="checkbox" id="produto" name="assunto" value="produto" />
-        <label for="produto">Produtos</label><br />
+        <input type="checkbox" id="produto" name="assunto" value="produto" class="inline-input" />
+        <label for="produto" class="inline-label">Produtos</label>
 
-        <input type="checkbox" id="duvida" name="assunto" value="duvida" />
-        <label for="duvida">Dúvida</label><br />
+        <input type="checkbox" id="duvida" name="assunto" value="duvida" class="inline-input" />
+        <label for="duvida" class="inline-label">Dúvida</label>
 
-        <input type="checkbox" id="sugestao" name="assunto" value="sugestao" />
-        <label for="sugestao">Sugestão</label><br /><br />
+        <input type="checkbox" id="sugestao" name="assunto" value="sugestao" class="inline-input" />
+        <label for="sugestao" class="inline-label">Sugestão</label>
 
-        <label for="comentario">Comentário:</label><br />
+        <label for="comentario" class="full-width">Comentário:</label>
         <textarea
           id="comentario"
           name="comentario"
           rows="5"
           cols="50"
-        ></textarea
-        ><br /><br />
+          class="full-width"
+        ></textarea>
 
-        <input type="submit" value="Enviar" />
-        <input type="reset" value="Limpar" />
+        <input type="submit" value="Enviar" class="btn-grid btn-enviar" />
+        <input type="reset" value="Limpar" class="btn-grid btn-limpar" />
       </form>
     </main>
 
