@@ -269,3 +269,7 @@ textarea {
     grid-column: span 10;
   }
 }
+.produtos > button {
+  width: 100%;
+  margin-bottom: 20px;
+}

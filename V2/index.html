@@ -1,225 +1,242 @@
 <!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ita Pets - Produtos para Pets</title>
+    <button
+      type="button"
+      id="infoItaPets"
+      class="btn btn-light"
+      data-bs-toggle="popover"
+      data-bs-placement="bottom"
+      data-bs-title="Sobre a Ita Pets"
+      data-bs-content="A Ita Pets oferece produtos para cuidar, alimentar e proporcionar conforto aos animais."
+    ></button>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ita Pets - Produtos para Pets</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <body>
+    <header>
+      <h1>Ita Pets</h1>
+      <p>Bem-vindo à Ita Pets!</p>
+    </header>
 
-<body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
 
-  <header>
-    <h1>Ita Pets</h1>
-    <p>Bem-vindo à Ita Pets!</p>
-  </header>
+    <main class="produtos">
+      <img
+        src="img/cachorro-e-gato-com-produtos-para-pets-itapets.webp"
+        alt="Cachorro e gato com produtos da Ita Pets"
+      />
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Início</a></li>
-      <li><a href="#produtos">Produtos</a></li>
-      <li><a href="contato.html">Contato</a></li>
-    </ul>
-  </nav>
+      <h2 id="produtos">Nossos Produtos</h2>
 
-  <main class="produtos">
+      <p>Confira os melhores produtos para o seu pet!</p>
 
-    <img
-      src="img/cachorro-e-gato-com-produtos-para-pets-itapets.webp"
-      alt="Cachorro e gato com produtos da Ita Pets"
-    />
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="collapse"
+        data-bs-target=".produtos article"
+        aria-expanded="true"
+      >
+        Mostrar/Ocultar produtos
+      </button>
 
-    <h2 id="produtos">Nossos Produtos</h2>
+      <article>
+        <h3>Ração para Cachorro</h3>
 
-    <p>Confira os melhores produtos para o seu pet!</p>
+        <a href="produtos/racao-premium-completa-para-caes-adultos.html">
+          <img
+            src="img/racao-premium-completa-para-caes-adultos.webp"
+            alt="Pacote de ração premium para cães adultos"
+          />
+        </a>
 
-    <article>
-      <h3>Ração para Cachorro</h3>
+        <a href="produtos/racao-premium-completa-para-caes-adultos.html">
+          Ração completa para cães adultos.
+        </a>
+      </article>
 
-      <a href="produtos/racao-premium-completa-para-caes-adultos.html">
-        <img
-          src="img/racao-premium-completa-para-caes-adultos.webp"
-          alt="Pacote de ração premium para cães adultos"
-        />
-      </a>
+      <article>
+        <h3>Ração para Gato</h3>
 
-      <a href="produtos/racao-premium-completa-para-caes-adultos.html">
-        Ração completa para cães adultos.
-      </a>
-    </article>
+        <a href="produtos/racao-premium-gatos-adultos.html">
+          <img
+            src="img/racao-premium-completa-para-gatos-adultos.webp"
+            alt="Pacote de ração premium para gatos adultos"
+          />
+        </a>
 
-    <article>
-      <h3>Ração para Gato</h3>
+        <a href="produtos/racao-premium-gatos-adultos.html">
+          Ração completa para gatos adultos.
+        </a>
+      </article>
 
-      <a href="produtos/racao-premium-gatos-adultos.html">
-        <img
-          src="img/racao-premium-completa-para-gatos-adultos.webp"
-          alt="Pacote de ração premium para gatos adultos"
-        />
-      </a>
+      <article>
+        <h3>Coleira para Cachorro</h3>
 
-      <a href="produtos/racao-premium-gatos-adultos.html">
-        Ração completa para gatos adultos.
-      </a>
-    </article>
+        <a href="produtos/coleira-ajustavel-para-cachorro.html">
+          <img
+            src="img/coleira-ajustavel-confortavel-resistente-para-cachorro.webp"
+            alt="Coleira ajustável e resistente para cachorro"
+          />
+        </a>
 
-    <article>
-      <h3>Coleira para Cachorro</h3>
+        <a href="produtos/coleira-ajustavel-para-cachorro.html">
+          Coleira confortável e resistente para cães.
+        </a>
+      </article>
 
-      <a href="produtos/coleira-ajustavel-para-cachorro.html">
-        <img
-          src="img/coleira-ajustavel-confortavel-resistente-para-cachorro.webp"
-          alt="Coleira ajustável e resistente para cachorro"
-        />
-      </a>
+      <article>
+        <h3>Brinquedo Bola</h3>
 
-      <a href="produtos/coleira-ajustavel-para-cachorro.html">
-        Coleira confortável e resistente para cães.
-      </a>
-    </article>
+        <a href="produtos/bola-brinquedo-para-cachorro.html">
+          <img
+            src="img/bola-brinquedo-para-brincadeiras-com-cachorro.webp"
+            alt="Bola de brinquedo para cachorro"
+          />
+        </a>
 
-    <article>
-      <h3>Brinquedo Bola</h3>
+        <a href="produtos/bola-brinquedo-para-cachorro.html">
+          Bola divertida para brincadeiras e exercícios.
+        </a>
+      </article>
 
-      <a href="produtos/bola-brinquedo-para-cachorro.html">
-        <img
-          src="img/bola-brinquedo-para-brincadeiras-com-cachorro.webp"
-          alt="Bola de brinquedo para cachorro"
-        />
-      </a>
+      <article>
+        <h3>Cama para Pet</h3>
 
-      <a href="produtos/bola-brinquedo-para-cachorro.html">
-        Bola divertida para brincadeiras e exercícios.
-      </a>
-    </article>
+        <a href="produtos/cama-confortavel-para-caes-e-gatos.html">
+          <img
+            src="img/cama-macia-confortavel-para-caes-e-gatos.webp"
+            alt="Cama confortável para cães e gatos"
+          />
+        </a>
 
-    <article>
-      <h3>Cama para Pet</h3>
+        <a href="produtos/cama-confortavel-para-caes-e-gatos.html">
+          Cama macia e confortável para cães e gatos.
+        </a>
+      </article>
 
-      <a href="produtos/cama-confortavel-para-caes-e-gatos.html">
-        <img
-          src="img/cama-macia-confortavel-para-caes-e-gatos.webp"
-          alt="Cama confortável para cães e gatos"
-        />
-      </a>
+      <article>
+        <h3>Shampoo para Pets</h3>
 
-      <a href="produtos/cama-confortavel-para-caes-e-gatos.html">
-        Cama macia e confortável para cães e gatos.
-      </a>
-    </article>
+        <a href="produtos/shampoo-para-caes-e-gatos.html">
+          <img
+            src="img/shampoo-para-higiene-e-limpeza-de-caes-e-gatos.webp"
+            alt="Frasco de shampoo para higiene de cães e gatos"
+          />
+        </a>
 
-    <article>
-      <h3>Shampoo para Pets</h3>
+        <a href="produtos/shampoo-para-caes-e-gatos.html">
+          Shampoo para higiene e cuidado dos pelos.
+        </a>
+      </article>
 
-      <a href="produtos/shampoo-para-caes-e-gatos.html">
-        <img
-          src="img/shampoo-para-higiene-e-limpeza-de-caes-e-gatos.webp"
-          alt="Frasco de shampoo para higiene de cães e gatos"
-        />
-      </a>
+      <article>
+        <h3>Comedouro para Pet</h3>
 
-      <a href="produtos/shampoo-para-caes-e-gatos.html">
-        Shampoo para higiene e cuidado dos pelos.
-      </a>
-    </article>
+        <a href="produtos/comedouro-para-caes-e-gatos.html">
+          <img
+            src="img/comedouro-para-alimentacao-de-caes-e-gatos.webp"
+            alt="Comedouro para cães e gatos"
+          />
+        </a>
 
-    <article>
-      <h3>Comedouro para Pet</h3>
+        <a href="produtos/comedouro-para-caes-e-gatos.html">
+          Comedouro prático para cães e gatos.
+        </a>
+      </article>
 
-      <a href="produtos/comedouro-para-caes-e-gatos.html">
-        <img
-          src="img/comedouro-para-alimentacao-de-caes-e-gatos.webp"
-          alt="Comedouro para cães e gatos"
-        />
-      </a>
+      <article>
+        <h3>Bebedouro para Pet</h3>
 
-      <a href="produtos/comedouro-para-caes-e-gatos.html">
-        Comedouro prático para cães e gatos.
-      </a>
-    </article>
+        <a href="produtos/bebedouro-para-caes-e-gatos.html">
+          <img
+            src="img/bebedouro-de-agua-para-caes-e-gatos.webp"
+            alt="Bebedouro de água para cães e gatos"
+          />
+        </a>
 
-    <article>
-      <h3>Bebedouro para Pet</h3>
+        <a href="produtos/bebedouro-para-caes-e-gatos.html">
+          Bebedouro ideal para manter água disponível para o pet.
+        </a>
+      </article>
 
-      <a href="produtos/bebedouro-para-caes-e-gatos.html">
-        <img
-          src="img/bebedouro-de-agua-para-caes-e-gatos.webp"
-          alt="Bebedouro de água para cães e gatos"
-        />
-      </a>
+      <article>
+        <h3>Arranhador para Gato</h3>
 
-      <a href="produtos/bebedouro-para-caes-e-gatos.html">
-        Bebedouro ideal para manter água disponível para o pet.
-      </a>
-    </article>
+        <a href="produtos/arranhador-para-gato.html">
+          <img
+            src="img/arranhador-para-diversao-e-cuidado-das-unhas-do-gato.webp"
+            alt="Arranhador para cuidado das unhas do gato"
+          />
+        </a>
 
-    <article>
-      <h3>Arranhador para Gato</h3>
+        <a href="produtos/arranhador-para-gato.html">
+          Arranhador para diversão e cuidado das unhas do gato.
+        </a>
+      </article>
 
-      <a href="produtos/arranhador-para-gato.html">
-        <img
-          src="img/arranhador-para-diversao-e-cuidado-das-unhas-do-gato.webp"
-          alt="Arranhador para cuidado das unhas do gato"
-        />
-      </a>
+      <article>
+        <h3>Caixa de Transporte</h3>
 
-      <a href="produtos/arranhador-para-gato.html">
-        Arranhador para diversão e cuidado das unhas do gato.
-      </a>
-    </article>
+        <a href="produtos/caixa-transporte-para-caes-e-gatos.html">
+          <img
+            src="img/caixa-segura-de-transporte-para-caes-e-gatos.webp"
+            alt="Caixa de transporte para cães e gatos"
+          />
+        </a>
 
-    <article>
-      <h3>Caixa de Transporte</h3>
+        <a href="produtos/caixa-transporte-para-caes-e-gatos.html">
+          Caixa segura para transportar cães e gatos.
+        </a>
+      </article>
 
-      <a href="produtos/caixa-transporte-para-caes-e-gatos.html">
-        <img
-          src="img/caixa-segura-de-transporte-para-caes-e-gatos.webp"
-          alt="Caixa de transporte para cães e gatos"
-        />
-      </a>
+      <article>
+        <h3>Tapete Higiênico</h3>
 
-      <a href="produtos/caixa-transporte-para-caes-e-gatos.html">
-        Caixa segura para transportar cães e gatos.
-      </a>
-    </article>
+        <a href="produtos/tapete-higienico-para-cachorro.html">
+          <img
+            src="img/tapete-higienico-absorvente-para-cachorro.webp"
+            alt="Pacote de tapete higiênico para cachorro"
+          />
+        </a>
 
-    <article>
-      <h3>Tapete Higiênico</h3>
+        <a href="produtos/tapete-higienico-para-cachorro.html">
+          Tapete higiênico para manter o ambiente mais limpo.
+        </a>
+      </article>
 
-      <a href="produtos/tapete-higienico-para-cachorro.html">
-        <img
-          src="img/tapete-higienico-absorvente-para-cachorro.webp"
-          alt="Pacote de tapete higiênico para cachorro"
-        />
-      </a>
+      <article>
+        <h3>Petisco para Cachorro</h3>
 
-      <a href="produtos/tapete-higienico-para-cachorro.html">
-        Tapete higiênico para manter o ambiente mais limpo.
-      </a>
-    </article>
+        <a href="produtos/petisco-para-cachorro.html">
+          <img
+            src="img/petisco-saboroso-para-recompensar-cachorro.webp"
+            alt="Pacote de petisco para cachorro"
+          />
+        </a>
 
-    <article>
-      <h3>Petisco para Cachorro</h3>
+        <a href="produtos/petisco-para-cachorro.html">
+          Petisco saboroso para recompensar seu cachorro.
+        </a>
+      </article>
+    </main>
 
-      <a href="produtos/petisco-para-cachorro.html">
-        <img
-          src="img/petisco-saboroso-para-recompensar-cachorro.webp"
-          alt="Pacote de petisco para cachorro"
-        />
-      </a>
+    <footer>
+      <p>&copy; 2026 Ita Pets. Todos os direitos reservados.</p>
+    </footer>
 
-      <a href="produtos/petisco-para-cachorro.html">
-        Petisco saboroso para recompensar seu cachorro.
-      </a>
-    </article>
-
-  </main>
-
-  <footer>
-    <p>&copy; 2026 Ita Pets. Todos os direitos reservados.</p>
-  </footer>
-
-</body>
-
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
